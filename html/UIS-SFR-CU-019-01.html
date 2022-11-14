@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/common.css">
+<!-- <link rel="stylesheet" href="../css/hover.css"> -->
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+<title>용도지역지구 분석 서비스</title>
+
+
+</head>
+<body>
+    
+    <div id="wrap">
+
+        <!-- header -->
+        <header id="header">
+            <!--accNav-->
+<!-- <div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div> -->
+<!--//accNav-->
+<article class="header">
+	<!-- logo -->
+	<div class="logo">
+		<a href="">
+			<img src="../images/header/logo_w.png" alt="k-geo 로고">
+		</a>
+		<i>|</i>
+		<p>용도지역지구 분석 서비스</p>
+	</div>
+	<!-- //logo -->
+	<!-- infor -->
+	<div class="infor">
+		<div class="log">
+			<a href="#none" class="name">
+				<img src="../images/header/header_ico_01.png" alt="사람모형아이콘" class="icon">
+				<p>국가공간정보센터&nbsp;<span>테스트</span>님</p>
+			</a>
+			<i>|</i>
+			<a href="#none" class="logout">
+				<img src="../images/header/header_ico_02.png" alt="로그아웃아이콘" class="icon">
+				<p>로그아웃</p>
+			</a>
+		</div>
+		<!-- //log -->
+		<a href="#none" class="bell">
+			<img src="../images/header/header_ico_03.png" alt="종 아이콘" class="bell_icon">
+			<p>10</p>
+		</a>
+	</div>
+	<!-- //infor -->
+
+</article>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <main id="container">
+            <div class="toc">
+                <div class="tab_wrap">
+                    <div class="tab_btn">
+                        <ul>
+                            <li class="on"><a href="#tocTab01"><img src="../images/toc/toc_tab_btn_01.png" alt="">지정현황</a></li>
+                            <li><a href="#tocTab02"><img src="../images/toc/toc_tab_btn_02.png" alt="">통계분석</a></li>
+                            <li><a href="#tocTab03"><img src="../images/toc/toc_tab_btn_03.png" alt="">유사그룹</a></li>
+                        </ul>
+                    </div>
+                    <!-- tab_container -->
+                    <div class="tab_container">
+                        <div class="tab_cont on" id="tocTab01">
+                            <div class="toc_tit">
+                                <p>지정현황</p>
+                            </div>
+                            <div class="toc_cont">
+                                <div class="tabContBtn">
+                                    <ul class="toc_cont_tit">
+                                        <li class="on" style="width: 33.33%;">
+                                            <a href="#tocContTab01"><h3>용도지역·지구</h3></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tocCont on" id="tocContTab01">
+                                    <div class="toc_cont_search">
+                                        <div class="select_box">
+                                            <select name="toc_select01" id="toc_select01">
+                                                <option value="">용도지역·지구</option>
+                                            </select>
+                                        </div>
+                                        <div class="search_box">
+                                            <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창">
+                                            <button title="검색 버튼"></button>
+                                        </div>
+                                    </div>
+                                    <div class="area_section" style="height: 282px;">
+                                        <div class="area_cont">
+                                            <ul class="dep01">
+                                                <li class="hasSub">
+                                                    <p class="txt">농림지역미분류(UQC000)</p>
+                                                    <ul class="dep02">
+                                                        <li class=" hasSub">
+                                                            <p class="txt">농림지역미분류(UQC000)</p>
+                                                            <ul class="dep03">
+                                                                <li>
+                                                                    <div class="flex">
+                                                                        <input type="checkbox" name="contChk01" id="contChk01">
+                                                                        <label for="contChk01"></label>
+                                                                        <p class="txt">농림지역미분류(UQC000)</p>
+                                                                        <button class="eyeIco on"></button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="hasSub">
+                                                    <p class="txt">농림지역(UQC001)</p>
+                                                    <ul class="dep02">
+                                                        <li class=" hasSub">
+                                                            <p class="txt">농림지역미분류(UQC000)</p>
+                                                            <ul class="dep03">
+                                                                <li>
+                                                                    <div class="flex">
+                                                                        <input type="checkbox" name="contChk02" id="contChk02">
+                                                                        <label for="contChk02"></label>
+                                                                        <p class="txt">농림지역미분류(UQC000)</p>
+                                                                        <button class="eyeIco on"></button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="hasSub">
+                                                    <p class="txt">농림지역기타(UQC999)</p>
+                                                    <ul class="dep02">
+                                                        <li class=" hasSub">
+                                                            <p class="txt">농림지역미분류(UQC000)</p>
+                                                            <ul class="dep03">
+                                                                <li>
+                                                                    <div class="flex">
+                                                                        <input type="checkbox" name="contChk03" id="contChk03">
+                                                                        <label for="contChk03"></label>
+                                                                        <p class="txt">농림지역미분류(UQC000)</p>
+                                                                        <button class="eyeIco"></button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- area_section [E] -->
+                                    <div class="search_result">
+                                        <div class="result_tit">
+                                            <p>검색결과&nbsp;<em>1</em>건</p>
+                                        </div>
+                                        <div class="result_table">
+                                            <table>
+                                                <caption>지정현황의 검색결과로 소재지와 중첩수를 나타냅니다</caption>
+                                                <colgroup>
+                                                    <col style="width: 310px;">
+                                                    <col style="width: 70px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">소재지</th>
+                                                        <th scope="col">중첩수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>경기도 안양시 동안구 관양동 792-2번지</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- search_result [E] -->
+                                    <div class="notice">
+                                        <p>&#8251; 최대 레이어 개수는 10개</p>
+                                        <p>&#8251; 전국 단위 용도지역 레이어는 지원하지 않음</p>
+                                        <p>&#8251; 용도지역지구 레이어수가 많으면 서비스 속도 지연됨</p>
+                                    </div>
+                                </div>
+                                <div class="tocCont" id="tocContTab02">
+                                </div>
+                            </div>
+                            <!-- toc_cont [E] -->
+                        </div>
+                        <div class="tab_cont" id="tocTab02">
+                            통계분석
+                        </div>
+                        <div class="tab_cont" id="tocTab03">
+                            유사그룹
+                        </div>
+                    </div>
+                    <button type="button" class="toc_toggle_btn" title="toc 접기 버튼"></button>
+                    <!-- //tab_container -->
+                </div>
+            </div>
+            <div class="map_container">
+                <div class="map_area">
+                    <div id="map"><!-- 지도자리 --></div>
+                    <div class="top_menu">
+                        <div class="location">
+                            <ul>
+                                <li>
+                                    <span>경기도</span>
+                                    <div class="dep2">
+                                        <ul>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>광명시</span>
+                                    <div class="dep2">
+                                        <ul>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>철산12동</span>
+                                    <div class="dep2">
+                                        <ul>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 지도 위치 -->
+                        <div class="search_area">
+                            <select name="ex01" id="ex01">
+                                <option value="">통합</option>
+                            </select>
+                            <div class="search_box">
+                                <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창">
+                                <button type="button" class="search_btn" title="통합검색 버튼"></button>
+                                <div class="search_ex">
+                                    <p>ex) 서울 호텔, 제주 식물원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 검색 영역 -->
+                    </div>
+                    <!-- top_menu [E] -->
+                    <div class="tool_bar">
+                        <div class="map_more">
+                            <div class="deps01 deps02_in">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_01.png" alt="지도 아이콘">
+                                    </div>
+                                    <p>지도</p>
+                                </a>
+                                <div class="deps02">
+                                    <div class="deps02Flex">
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_01.png" alt="바로e맵 아이콘">
+                                            <p>바로e맵</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_02.png" alt="항공사진 아이콘">
+                                            <p>항공사진</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_03.png" alt="백지도 아이콘">
+                                            <p>백지도</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deps01 deps02_in">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_02.png" alt="지도분할 아이콘">
+                                    </div>
+                                    <p>지도분할</p>
+                                </a>
+                                <div class="deps02">
+                                    <div class="deps02Flex">
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_07.png" alt="전체지도 아이콘">
+                                            <p>전체지도</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_08.png" alt="2분할 아이콘">
+                                            <p>2분할</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_09.png" alt="3분할 아이콘">
+                                            <p>3분할</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_10.png" alt="4분할  아이콘">
+                                            <p>4분할 </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deps01">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_03.png" alt="레이어 아이콘">
+                                    </div>
+                                    <p>레이어</p>
+                                </a>
+                                <div class="deps02 deps02Popup">
+                                    <article class="popupSliding active" style="width: 330px;">
+                                        <div class="popupHeader">
+                                            <span class="popupTit">기본지도</span>
+                                            <div class="titBtn">
+                                                <button class="miniBtn" type="button">
+                                                    <span class="hidden">팝업 최소화 버튼</span>
+                                                </button>
+                                                <button class="opaBtn" type="button">
+                                                    <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- //popupTit -->
+                                        <div class="slidingBox">
+                                            <div class="popupCont">
+                                                <div class="area_section type02" style="height: 150px;">
+                                                    <div class="area_cont">
+                                                        <ul class="dep01">
+                                                            <li class="hasSub">
+                                                                <div class="flex">
+                                                                    <p class="txt">농림지역(UQC001)</p>
+                                                                    <button class="eyeIco on"></button>
+                                                                </div>
+                                                            </li>
+                                                            <li class="hasSub">
+                                                                <div class="flex">
+                                                                    <p class="txt">농림지역(UQC001)</p>
+                                                                    <button class="eyeIco on"></button>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //popupCont -->
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="deps01">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_04.png" alt="분석도구 아이콘">
+                                    </div>
+                                    <p>분석도구</p>
+                                </a>
+                            </div>
+                            <div class="deps01 deps02_in">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_05.png" alt="지정현황 아이콘">
+                                    </div>
+                                    <p>지정현황</p>
+                                </a>
+                                <div class="deps02">
+                                    <div class="deps02Flex">
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_04.png" alt="필지선택 아이콘">
+                                            <p>필지선택</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_05.png" alt="반경선택 아이콘">
+                                            <p>반경선택</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_06.png" alt="영역선택 아이콘">
+                                            <p>영역선택</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scale">
+                            <div class="deps01">
+                                <button type="button" class="scale_p" title="크게보기 버튼"></button>
+                            </div>
+                            <div class="deps01 scale_range">
+                                <input type="range" value="0" title="확대축소 범위">
+                            </div>
+                            <div class="deps01">
+                                <button type="button" class="scale_m" title="작게보기 버튼"></button>
+                            </div>
+                        </div>
+                        <div class="schedule">
+                            <div class="deps01">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_06.png" alt="스케쥴관리 아이콘">
+                                    </div>
+                                    <p style="font-size: 10px;">스케쥴관리</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tool_bar [E] -->
+                </div>
+                <!-- map_area [E] -->
+                <article class="popup" style="width: 980px;">
+                    <div class="popup_header">
+                        <div class="tit">
+                            <p>공간분석 결과 조회</p>
+                        </div>
+                        <div class="btnGroup02" style="margin: 0;">
+                            <div class="chkSelectBox">
+                                <input type="checkbox" name="chkSelectBox" id="chkSelectBox">
+                                <label for="chkSelectBox"></label>
+                                <label for="chkSelectBox"><span>주기적 분석 여부</span></label>
+                                <select name="sel01" id="sel01" class="applicable">
+                                    <option value="전체">전체</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btnBlue02">이력 저장</button>
+                            <button type="button" class="btnGreen"><img src="../images/popup/ico_excel.png" alt="현황 보고서 출력 버튼">엑셀 다운로드</button>
+                        </div>
+                    </div>
+                    <div class="popup_cont">
+                        <div class="scrollTable chkBox" style="height: 230px;">
+                            <table>
+                                <caption>공간분석 결과 조회로 대상관리번호, 대상지역지구, 대상면적, 대상타겟관리번호, 타겟지역지구, 대상면적으로 제공합니다</caption>
+                                <colgroup>
+                                    <col style="width: 268px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 80px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">대상관리번호</th>
+                                        <th scope="col">대상지역지구</th>
+                                        <th scope="col">대상면적(㎡)</th>
+                                        <th scope="col">대상타겟관리번호</th>
+                                        <th scope="col">타겟지역지구</th>
+                                        <th scope="col">대상면적(㎡)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>농림지역</td>
+                                        <td>1000</td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>공익용산지</td>
+                                        <td>1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>농림지역</td>
+                                        <td>1000</td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>공익용산지</td>
+                                        <td>1000</td>
+                                    </tr> <tr>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>농림지역</td>
+                                        <td>1000</td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>공익용산지</td>
+                                        <td>1000</td>
+                                    </tr> <tr>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>농림지역</td>
+                                        <td>1000</td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>공익용산지</td>
+                                        <td>1000</td>
+                                    </tr> <tr>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>농림지역</td>
+                                        <td>1000</td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>공익용산지</td>
+                                        <td>1000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" class="popup_toggle_btn" title="popup 접기 버튼"></button>
+                </article>
+                <!-- //popup -->
+                <!-- popupSliding -->
+                <article class="popupSliding active" style="top: 160px; left: 470px; width: 981px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">분석도구</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupCont">
+                            <div class="headBlue">
+                                <p class="label">분석지역</p>
+                                <p>경기도 안양시 동안구</p>
+                                <p class="exTxt">&#8251; 분석수행은 시군구 선택시에만 가능합니다.</p>
+                            </div>
+                            <div class="analysisTools" style="margin-top: 20px;">
+                                <div style="width: 300px;">
+                                    <div class="popupTabWrap tab_wrap" style="width: 280px;">
+                                        <ul class="tab_btn tabBtn02">
+                                            <li class="on">
+                                                <a href="#poupContTab01" title="지정현황">
+                                                    <p>지정현황</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#poupContTab02" title="분석이력">
+                                                    <p>분석이력</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab_container">
+                                            <div class="tab_cont on" id="poupContTab01">
+                                                <div class="infoBox">
+                                                    <div class="infoBoxTit type02" style="padding: 10px;">
+                                                        <div class="selectBox">
+                                                            <select name="poupSel01" id="poupSel01" style="width: 100%;">
+                                                                <option value="">지정현황</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="search_box" style="width: 100%;">
+                                                            <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창">
+                                                            <button type="button" class="search_btn" title="검색 버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="infoBoxCont" style="height: 230px;">
+                                                        <ul class="deps01">
+                                                            <li><div><p>산림</p></div>
+                                                                <ul class="deps02">
+                                                                    <li>
+                                                                        <div>
+                                                                            <input type="checkbox" name="contchk11" id="contchk11">
+                                                                            <label for="contchk11"></label>
+                                                                            <p>산지관리/보전준보전산지</p>
+                                                                        </div>
+                                                                        <ul class="deps03">
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전준보저산지미분류</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>임업용산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>공익용산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>준보전산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- //infoBoxCont -->
+                                                </div>
+                                                <!-- //infoBox -->
+                                                <div class="btnGroup02">
+                                                    <button type="button" class="btnGray">대상</button>
+                                                    <button type="button" class="btnGray">타겟</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab_cont" id="poupContTab02">
+                                                <div class="infoBox">
+                                                    <div class="infoBoxTit type02" style="padding: 10px;">
+                                                        <div class="selectBox">
+                                                            <select name="poupSel01" id="poupSel01" style="width: 100%;">
+                                                                <option value="">분석이력</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="search_box" style="width: 100%;">
+                                                            <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창">
+                                                            <button type="button" class="search_btn" title="검색 버튼"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="infoBoxCont" style="height: 230px;">
+                                                        <ul class="deps01">
+                                                            <li><div><p>산림</p></div>
+                                                                <ul class="deps02">
+                                                                    <li>
+                                                                        <div>
+                                                                            <input type="checkbox" name="contchk11" id="contchk11">
+                                                                            <label for="contchk11"></label>
+                                                                            <p>산지관리/보전준보전산지</p>
+                                                                        </div>
+                                                                        <ul class="deps03">
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전준보저산지미분류</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>임업용산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>공익용산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div>
+                                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>준보전산지</p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- //infoBoxCont -->
+                                                </div>
+                                                <!-- //infoBox -->
+                                                <div class="btnGroup02">
+                                                    <button type="button" class="btnGray">대상</button>
+                                                    <button type="button" class="btnGray">타겟</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 620px;">
+                                    <div class="rangeBox">
+                                        <div class="box on">
+                                            <p>완전포함</p>
+                                            <img src="../images/popup/circle_ico01.png" alt="">
+                                        </div>
+                                        <div class="box">
+                                            <p>겹침</p>
+                                            <img src="../images/popup/circle_ico02.png" alt="">
+                                        </div>
+                                        <div class="box">
+                                            <p>맞닿음</p>
+                                            <img src="../images/popup/circle_ico03.png" alt="">
+                                        </div>
+                                    </div> <!-- //rangeBox -->
+                                    <div class="moveInfoBox">
+                                        <div class="infoBox" style="width: 280px;">
+                                            <div class="infoBoxTit" style="padding: 10px;">
+                                                <h3>대상레이어</h3>
+                                            </div>
+                                            <div class="infoBoxCont" style="height: 210px;">
+                                                <ul class="deps01">
+                                                    <li>
+                                                        <div>
+                                                            <p>국토계회/농림지역</p>
+                                                        </div>
+                                                        <ul class="deps02">
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk12" id="contchk12">
+                                                                    <label for="contchk12"></label>
+                                                                    <div class="colorBox" style="background-color: #F6F03E;"></div><p>농림지역미분류</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk13" id="contchk13">
+                                                                    <label for="contchk13"></label>
+                                                                    <div class="colorBox" style="background-color: #F6F03E;"></div><p>농림지역</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk14" id="contchk14">
+                                                                    <label for="contchk14"></label>
+                                                                    <div class="colorBox" style="background-color: #F6F03E;"></div><p>농림지역기타</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //infoBoxCont -->
+                                        </div>
+                                        <!-- //infoBox -->
+                                        <button type="button" class="moveBtn">
+                                            <span class="hidden">옮기기</span>
+                                        </button>
+                                        <div class="infoBox" style="width: 280px;">
+                                            <div class="infoBoxTit" style="padding: 10px;">
+                                                <h3>타겟레이어</h3>
+                                            </div>
+                                            <div class="infoBoxCont" style="height: 210px;">
+                                                <ul class="deps01">
+                                                    <li>
+                                                        <div>
+                                                            <p>산지관리/보전준보전산지</p>
+                                                        </div>
+                                                        <ul class="deps02">
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk15" id="contchk15">
+                                                                    <label for="contchk15"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>산지관리/보전준보전산지</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk16" id="contchk16">
+                                                                    <label for="contchk16"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전준보전산지미분류</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk17" id="contchk17">
+                                                                    <label for="contchk17"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전산지</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk18" id="contchk18">
+                                                                    <label for="contchk18"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>임업용산지</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk19" id="contchk19">
+                                                                    <label for="contchk19"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>공익용산지</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk20" id="contchk20">
+                                                                    <label for="contchk20"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>준보전산지</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <input type="checkbox" name="contchk21" id="contchk21">
+                                                                    <label for="contchk21"></label>
+                                                                    <div class="colorBox" style="background-color: #ddd;"></div><p>보전준보전산지기타</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- //infoBoxCont -->
+                                        </div>
+                                        <!-- //infoBox -->
+                                    </div>
+                                    <div class="btnGroup02">
+                                        <button type="button" class="btnBlue04">설정저장</button>
+                                        <button type="button" class="btnBlue03">분석</button>
+                                        <button type="button" class="btnGray">초기화</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //popupSliding 분석도구 -->
+                <article class="popupSliding active" style="top: 230px; left: 665px; width: 590px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">상세조회</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupCont">
+                            <div class="tableBox">
+                                <table>
+                                    <caption>상세조회로 관리번호, 지역지구명, 면적, 분석결과를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="col" class="tl">관리번호</th>
+                                            <td class="tl">00000000000000000000AAA0000000001</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="col" class="tl">지역지구명</th>
+                                            <td class="tl">농림지역</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="col" class="tl">면적(㎡)</th>
+                                            <td class="tl">1000</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="col" class="tl">분석결과</th>
+                                            <td class="tl">농림지역을 대상으로 공익용산지의 면적 1000㎡을 포함하고 있습니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //popupSliding 상세조회 -->
+                <article class="popupSliding active" style="top: 100px; left: 10px; width: 820px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">유사목적별 지역·지구 지정 현황 스케쥴 관리</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupCont">
+                            <div class="popupSearchBox typecenter">
+                                <div>
+                                    <p>구분</p>
+                                    <select name="popupSel01" id="popupSel01">
+                                        <option value="">1회</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>스케줄명</p>
+                                    <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창" style="width: 250px;">
+                                </div>
+                                <button type="button" class="btnGray02 popupSearchBtn">검색</button>
+                            </div>
+                            <!-- //popupSearchBox -->
+                            <div class="result_tit">
+                                <p>전체&nbsp;<em>18</em>건</p>
+                            </div>
+                            <div class="tableBox">
+                                <table>
+                                    <caption>구분, 스케줄명에 대한 검색 결과로 순번, 스케쥴명, 구분, 스케쥴일시, 등록자, 등록일시를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 40px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 70px;">
+                                        <col style="width: 200px;">
+                                        <col style="width: 90px;">
+                                        <col style="width: 155px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="col">순번</th>
+                                            <th colspan="col">스케쥴명</th>
+                                            <th colspan="col">구분</th>
+                                            <th colspan="col">스케쥴일시</th>
+                                            <th colspan="col">등록자</th>
+                                            <th colspan="col">등록일시</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>유사목적별 지정 현황 스케쥴1</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>유사목적별 지정 현황 스케쥴2</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>유사목적별 지정 현황 스케쥴3</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>유사목적별 지정 현황 스케쥴4</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>유사목적별 지정 현황 스케쥴5</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>유사목적별 지정 현황 스케쥴6</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>유사목적별 지정 현황 스케쥴7</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>유사목적별 지정 현황 스케쥴8</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>유사목적별 지정 현황 스케쥴9</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>유사목적별 지정 현황 스케쥴0</td>
+                                            <td>1회</td>
+                                            <td>2022년 5월 26일 22시 0분 0초</td>
+                                            <td>nsidAdmin</td>
+                                            <td>2020-07-07 12:12:12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //tableBox -->
+                            <div class="pagination">
+                                <button type="button" class="btnFirst" title="맨앞으로">
+                                    <span class="hidden">맨앞으로</span>
+                                    <img src="../images/common/prev_first_ico.png" alt="">
+                                </button>
+                                <button type="button" class="btnPrev" title="이전페이지">
+                                    <span class="hidden">이전페이지</span>
+                                    <img src="../images/common/prev_ico.png" alt="">
+                                </button>
+                                <a href="#" class="active" title="1">1</a>
+                                <a href="#" title="2">2</a>
+                                <a href="#" title="3">3</a>
+                                <a href="#" title="4">4</a>
+                                <a href="#" title="5">5</a>
+                                <a href="#" title="6">6</a>
+                                <a href="#" title="7">7</a>
+                                <a href="#" title="8">8</a>
+                                <a href="#" title="9">9</a>
+                                <a href="#" title="10">10</a>
+                                <button type="button" class="btnNext" title="다음페이지">
+                                    <span class="hidden">다음페이지</span>
+                                    <img src="../images/common/next_ico.png" alt="">
+                                </button>
+                                <button type="button" class="btnLast" title="맨뒤로">
+                                    <span class="hidden">맨뒤로</span>
+                                    <img src="../images/common/next_last_ico.png" alt="">
+                                </button>
+                            </div>
+                            <!-- //pagination -->
+                            <div class="btnGroup02">
+                                <button type="button" class="btnBlue03" title="등록">등록</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //popupSliding 스케줄관리 -->
+                <article class="popupSliding active" style="top: 100px; left: 840px; width: 680px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">유사목적별 지역·지구 지정 현황 스케쥴 등록</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupContTit">
+                            <div class="flex sb ac">
+                                <p>기본정보</p>
+                                <span class="searchHint">표시는 필수입력항목 입니다.</span>
+                            </div>
+                        </div>
+                        <div class="popupCont">
+                            <div class="tableBox">
+                                <table>
+                                    <caption>스케쥴등록의 기본정보 입력항목으로 스케쥴명과 스케쥴일시를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 150px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="row" class="tl redDot">스케쥴명</th>
+                                            <td>
+                                                <div class="inputBox">
+                                                    <input type="text" title="스케쥴명 입력창" style="width: 95%;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="row" class="tl redDot">스케쥴일시</th>
+                                            <td>
+                                                <div class="slelectBox">
+                                                    <select name="popupSel02" id="popupSel02">
+                                                        <option>매월</option>
+                                                    </select>
+                                                    <div>
+                                                        <select name="popupSel03" id="popupSel03">
+                                                            <option>선택</option>
+                                                        </select>
+                                                        <span>시</span>
+                                                    </div>
+                                                    <div>
+                                                        <select name="popupSel04" id="popupSel04">
+                                                            <option>선택</option>
+                                                        </select>
+                                                        <span>분</span>
+                                                    </div>
+                                                    <div>
+                                                        <select name="popupSel05" id="popupSel05">
+                                                            <option>선택</option>
+                                                        </select>
+                                                        <span>초</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //기본정보 -->
+                        <div class="popupContTit">
+                            <div class="flex sb bottom">
+                                <p>분석유형</p>
+                                <div class="btnGroup03">
+                                    <button type="button" class="btnBlue02">스케쥴 대상 추가</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popupCont">
+                            <div class="tableBox">
+                                <table>
+                                    <caption>스케쥴등록의 분석유형으로 분석유형을 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 150px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="row">분석유형</th>
+                                            <td>
+                                                <span>완전포함</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //분석유형 -->
+                        <div class="popupContTit">
+                            <p>대상레이어</p>
+                        </div>
+                        <div class="popupCont">
+                            <div class="scrollTable tableBox chkBox" style="max-height: 270px;">
+                                <table>
+                                    <caption>스케쥴 등록의 대상레이어로 유사목적 그룹명, 유사목적 레이어명, 등록자, 등록일시를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 40px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 130px;">
+                                        <col style="width: 90px;">
+                                        <col style="width: 150px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="col">
+                                                <input type="checkbox" name="popup_chk_01" id="popup_chk_01" class="chkAll">
+                                                <label for="popup_chk_01"></label>
+                                            </th>
+                                            <th colspan="col">유사목적 그룹명</th>
+                                            <th colspan="col">유사목적 레이어명</th>
+                                            <th colspan="col">등록자</th>
+                                            <th colspan="col">등록일시</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_02" id="popup_chk_02" class="chkInd">
+                                                <label for="popup_chk_02"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_03" id="popup_chk_03" class="chkInd">
+                                                <label for="popup_chk_03"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_04" id="popup_chk_04" class="chkInd">
+                                                <label for="popup_chk_04"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_05" id="popup_chk_05" class="chkInd">
+                                                <label for="popup_chk_05"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_06" id="popup_chk_06" class="chkInd">
+                                                <label for="popup_chk_06"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_07" id="popup_chk_07" class="chkInd">
+                                                <label for="popup_chk_07"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_08" id="popup_chk_08" class="chkInd">
+                                                <label for="popup_chk_08"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_09" id="popup_chk_09" class="chkInd">
+                                                <label for="popup_chk_09"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_10" id="popup_chk_10" class="chkInd">
+                                                <label for="popup_chk_10"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //대상레이어 -->
+                        <div class="popupContTit">
+                            <p>타겟레이어</p>
+                        </div>
+                        <div class="popupCont">
+                            <div class="scrollTable tableBox chkBox" style="max-height: 270px;">
+                                <table>
+                                    <caption>스케쥴 등록의 타겟레이어로 유사목적 그룹명, 유사목적 레이어명, 등록자, 등록일시를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 40px;">
+                                        <col style="width: auto;">
+                                        <col style="width: 130px;">
+                                        <col style="width: 90px;">
+                                        <col style="width: 150px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="col">
+                                                <input type="checkbox" name="popup_chk_11" id="popup_chk_11" class="chkAll">
+                                                <label for="popup_chk_11"></label>
+                                            </th>
+                                            <th colspan="col">유사목적 그룹명</th>
+                                            <th colspan="col">유사목적 레이어명</th>
+                                            <th colspan="col">등록자</th>
+                                            <th colspan="col">등록일시</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_12" id="popup_chk_12" class="chkInd">
+                                                <label for="popup_chk_12"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_13" id="popup_chk_13" class="chkInd">
+                                                <label for="popup_chk_13"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_14" id="popup_chk_14" class="chkInd">
+                                                <label for="popup_chk_14"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_15" id="popup_chk_15" class="chkInd">
+                                                <label for="popup_chk_15"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_16" id="popup_chk_16" class="chkInd">
+                                                <label for="popup_chk_16"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_17" id="popup_chk_17" class="chkInd">
+                                                <label for="popup_chk_17"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_18" id="popup_chk_18" class="chkInd">
+                                                <label for="popup_chk_18"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_19" id="popup_chk_19" class="chkInd">
+                                                <label for="popup_chk_19"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_20" id="popup_chk_20" class="chkInd">
+                                                <label for="popup_chk_20"></label>
+                                            </td>
+                                            <td>유사목적그룹1</td>
+                                            <td>유사목적 추가 테스트</td>
+                                            <td>홍길동</td>
+                                            <td>2022-05-27 12:12:12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //타겟레이어 -->
+                        <div class="btnGroup02">
+                            <button type="button" class="btnBlue03">저장</button>
+                            <button type="button" class="btnGray">취소</button>
+                        </div>
+                    </div>
+                    <!-- //slidingBox -->
+                </article>
+                <!-- //popupSliding 스케줄등록 -->
+                <article class="popupSliding active" style="top: 200px; left: 100px; width: 680px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">유사목적 분석 이력</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupCont">
+                            <div class="popupSearchBox typecenter">
+                                <div style="margin-right: 5px;">
+                                    <select name="popupSel06" id="popupSel06">
+                                        <option value="">이력명</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창" style="width: 150px;">
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkbox"><label for="checkbox"></label>
+                                    <div class="calenderBox">
+                                        <input type="text" class="cal">
+                                        <span>~</span>
+                                        <input type="text" class="cal">
+                                    </div>
+                                </div>
+                                <button type="button" class="btnGray02 popupSearchBtn">검색</button>
+                            </div>
+                            <!-- //popupSearchBox -->
+                            <div class="tableBox">
+                                <table>
+                                    <caption>이력명, 날짜에 따른 검색 결과로 유사목적 분석명, 구분, 등록자, 등록일시를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: auto;">
+                                        <col style="width: 80px;">
+                                        <col style="width: 90px;">
+                                        <col style="width: 150px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="col">유사목적 분석명</th>
+                                            <th colspan="col">구분</th>
+                                            <th colspan="col">등록자</th>
+                                            <th colspan="col">등록일시</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>농림지역 공익용산지분석(완전포함)</td>
+                                            <td>완전포함</td>
+                                            <td>User01</td>
+                                            <td>2022-05-05 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>농림지역 공익용산지분석(완전포함)</td>
+                                            <td>완전포함</td>
+                                            <td>User01</td>
+                                            <td>2022-05-05 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>농림지역 공익용산지분석(완전포함)</td>
+                                            <td>완전포함</td>
+                                            <td>User01</td>
+                                            <td>2022-05-05 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>농림지역 공익용산지분석(완전포함)</td>
+                                            <td>완전포함</td>
+                                            <td>User01</td>
+                                            <td>2022-05-05 12:12:12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>농림지역 공익용산지분석(완전포함)</td>
+                                            <td>완전포함</td>
+                                            <td>User01</td>
+                                            <td>2022-05-05 12:12:12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //tableBox -->
+                            <div class="pagination">
+                                <button type="button" class="btnFirst" title="맨앞으로">
+                                    <span class="hidden">맨앞으로</span>
+                                    <img src="../images/common/prev_first_ico.png" alt="">
+                                </button>
+                                <button type="button" class="btnPrev" title="이전페이지">
+                                    <span class="hidden">이전페이지</span>
+                                    <img src="../images/common/prev_ico.png" alt="">
+                                </button>
+                                <a href="#" class="active" title="1">1</a>
+                                <a href="#" title="2">2</a>
+                                <a href="#" title="3">3</a>
+                                <a href="#" title="4">4</a>
+                                <a href="#" title="5">5</a>
+                                <a href="#" title="6">6</a>
+                                <a href="#" title="7">7</a>
+                                <a href="#" title="8">8</a>
+                                <a href="#" title="9">9</a>
+                                <a href="#" title="10">10</a>
+                                <button type="button" class="btnNext" title="다음페이지">
+                                    <span class="hidden">다음페이지</span>
+                                    <img src="../images/common/next_ico.png" alt="">
+                                </button>
+                                <button type="button" class="btnLast" title="맨뒤로">
+                                    <span class="hidden">맨뒤로</span>
+                                    <img src="../images/common/next_last_ico.png" alt="">
+                                </button>
+                            </div>
+                            <!-- //pagination -->
+                            <div class="btnGroup02">
+                                <button type="button" class="btnBlue03" title="등록">등록</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //popupSliding 스케줄관리 -->
+            </div>
+        </main>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer id="footer">
+            
+        </footer>
+        <!-- //footer -->
+    </div>
+    
+</body>
+</html>

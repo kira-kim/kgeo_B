@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/common.css">
+<!-- <link rel="stylesheet" href="../css/hover.css"> -->
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+<title>용도지역지구 분석 서비스</title>
+
+
+</head>
+<body>
+    
+    <div id="wrap">
+
+        <!-- header -->
+        <header id="header">
+            <!--accNav-->
+<!-- <div id="accNav">
+    <a href="#container">본문 바로가기</a>
+</div> -->
+<!--//accNav-->
+<article class="header">
+	<!-- logo -->
+	<div class="logo">
+		<a href="">
+			<img src="../images/header/logo_w.png" alt="k-geo 로고">
+		</a>
+		<i>|</i>
+		<p>용도지역지구 분석 서비스</p>
+	</div>
+	<!-- //logo -->
+	<!-- infor -->
+	<div class="infor">
+		<div class="log">
+			<a href="#none" class="name">
+				<img src="../images/header/header_ico_01.png" alt="사람모형아이콘" class="icon">
+				<p>국가공간정보센터&nbsp;<span>테스트</span>님</p>
+			</a>
+			<i>|</i>
+			<a href="#none" class="logout">
+				<img src="../images/header/header_ico_02.png" alt="로그아웃아이콘" class="icon">
+				<p>로그아웃</p>
+			</a>
+		</div>
+		<!-- //log -->
+		<a href="#none" class="bell">
+			<img src="../images/header/header_ico_03.png" alt="종 아이콘" class="bell_icon">
+			<p>10</p>
+		</a>
+	</div>
+	<!-- //infor -->
+
+</article>
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <main id="container">
+            <div class="toc">
+                <div class="tab_wrap">
+                    <div class="tab_btn">
+                        <ul>
+                            <li class="on"><a href="#tocTab01"><img src="../images/toc/toc_tab_btn_01.png" alt="">지정현황</a></li>
+                            <li><a href="#tocTab02"><img src="../images/toc/toc_tab_btn_02.png" alt="">통계분석</a></li>
+                            <li><a href="#tocTab03"><img src="../images/toc/toc_tab_btn_03.png" alt="">유사그룹</a></li>
+                        </ul>
+                    </div>
+                    <!-- tab_container -->
+                    <div class="tab_container">
+                        <div class="tab_cont on" id="tocTab01">
+                            <div class="toc_tit">
+                                <p>지정현황</p>
+                                <div class="breadcrumbs">
+                                    <select name="" id="">
+                                        <option value="">제주특별자치도</option>
+                                        <option value="">서울특별시</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="">서귀포시</option>
+                                        <option value="">여섯글자정도</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="toc_cont">
+                                <div class="tabContBtn">
+                                    <ul class="toc_cont_tit">
+                                        <li class="on" style="width: 33.33%;">
+                                            <a href="#tocContTab01"><h3>용도지역·지구</h3></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tocCont on" id="tocContTab01">
+                                    <div class="toc_cont_search">
+                                        <div class="select_box">
+                                            <select name="toc_select01" id="toc_select01">
+                                                <option value="">용도지역·지구</option>
+                                            </select>
+                                        </div>
+                                        <div class="search_box">
+                                            <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창">
+                                            <button title="검색 버튼"></button>
+                                        </div>
+                                    </div>
+                                    <div class="area_section" style="height: 282px;">
+                                        <div class="area_cont">
+                                            <ul class="dep01">
+                                                <li class="hasSub">
+                                                    <p class="txt">농림지역미분류(UQC000)</p>
+                                                    <ul class="dep02">
+                                                        <li class=" hasSub">
+                                                            <p class="txt">농림지역미분류(UQC000)</p>
+                                                            <ul class="dep03">
+                                                                <li>
+                                                                    <div class="flex">
+                                                                        <input type="checkbox" name="contChk01" id="contChk01">
+                                                                        <label for="contChk01"></label>
+                                                                        <p class="txt">농림지역미분류(UQC000)</p>
+                                                                        <button class="eyeIco on"></button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="hasSub">
+                                                    <p class="txt">농림지역(UQC001)</p>
+                                                    <ul class="dep02">
+                                                        <li class=" hasSub">
+                                                            <p class="txt">농림지역미분류(UQC000)</p>
+                                                            <ul class="dep03">
+                                                                <li>
+                                                                    <div class="flex">
+                                                                        <input type="checkbox" name="contChk02" id="contChk02">
+                                                                        <label for="contChk02"></label>
+                                                                        <p class="txt">농림지역미분류(UQC000)</p>
+                                                                        <button class="eyeIco on"></button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="hasSub">
+                                                    <p class="txt">농림지역기타(UQC999)</p>
+                                                    <ul class="dep02">
+                                                        <li class=" hasSub">
+                                                            <p class="txt">농림지역미분류(UQC000)</p>
+                                                            <ul class="dep03">
+                                                                <li>
+                                                                    <div class="flex">
+                                                                        <input type="checkbox" name="contChk03" id="contChk03">
+                                                                        <label for="contChk03"></label>
+                                                                        <p class="txt">농림지역미분류(UQC000)</p>
+                                                                        <button class="eyeIco"></button>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- area_section [E] -->
+                                    <div class="search_result">
+                                        <div class="result_tit">
+                                            <p>검색결과&nbsp;<em>1</em>건</p>
+                                        </div>
+                                        <div class="result_table">
+                                            <table>
+                                                <caption>지정현황의 검색결과로 소재지와 중첩수를 나타냅니다</caption>
+                                                <colgroup>
+                                                    <col style="width: 310px;">
+                                                    <col style="width: 70px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">소재지</th>
+                                                        <th scope="col">중첩수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>경기도 안양시 동안구 관양동 792-2번지</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- search_result [E] -->
+                                    <div class="pagination">
+                                        <button type="button" class="btnFirst" title="맨앞으로">
+                                            <span class="hidden">맨앞으로</span>
+                                            <img src="../images/common/prev_first_ico.png" alt="">
+                                        </button>
+                                        <button type="button" class="btnPrev" title="이전페이지">
+                                            <span class="hidden">이전페이지</span>
+                                            <img src="../images/common/prev_ico.png" alt="">
+                                        </button>
+                                        <a href="#" class="active" title="1">1</a>
+                                        <a href="#" title="2">2</a>
+                                        <a href="#" title="3">3</a>
+                                        <a href="#" title="4">4</a>
+                                        <a href="#" title="5">5</a>
+                                        <a href="#" title="6">6</a>
+                                        <a href="#" title="7">7</a>
+                                        <a href="#" title="8">8</a>
+                                        <a href="#" title="9">9</a>
+                                        <a href="#" title="10">10</a>
+                                        <button type="button" class="btnNext" title="다음페이지">
+                                            <span class="hidden">다음페이지</span>
+                                            <img src="../images/common/next_ico.png" alt="">
+                                        </button>
+                                        <button type="button" class="btnLast" title="맨뒤로">
+                                            <span class="hidden">맨뒤로</span>
+                                            <img src="../images/common/next_last_ico.png" alt="">
+                                        </button>
+                                    </div>
+                                    <!-- //pagination -->
+                                    <div class="notice">
+                                        <p>&#8251; 최대 레이어 개수는 10개</p>
+                                        <p>&#8251; 전국 단위 용도지역 레이어는 지원하지 않음</p>
+                                        <p>&#8251; 용도지역지구 레이어수가 많으면 서비스 속도 지연됨</p>
+                                    </div>
+                                </div>
+                                <div class="tocCont" id="tocContTab02">
+                                </div>
+                            </div>
+                            <!-- toc_cont [E] -->
+                        </div>
+                        <!-- //tocTab01 -->
+                        <div class="tab_cont" id="tocTab02">
+                            <div class="toc_tit">
+                                <p>통계분석</p>
+                            </div>
+                            <div class="toc_cont">
+                                <div class="tabContBtn">
+                                    <ul class="toc_cont_tit">
+                                        <li class="on">
+                                            <a href="#tocContTab02_01"><h3>통계 목록</h3></a>
+                                        </li>
+                                        <li>
+                                            <a href="#tocContTab02_02"><h3>범례</h3></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tocCont on" id="tocContTab02_01">
+                                    <div class="search_result">
+                                        <div class="tocContSubTit">
+                                            <p>지역·지구 지정현황</p>
+                                            <button type="button" class="btnGray btnType01">상세조회</button>
+                                        </div>
+                                        <div class="result_table">
+                                            <table>
+                                                <caption>지역 지구 지정현황으로 지역지구명, 기준년월, 중첩수를 제공합니다</caption>
+                                                <colgroup>
+                                                    <col style="width: 240px;">
+                                                    <col style="width: 70px;">
+                                                    <col style="width: 70px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">지역지구명</th>
+                                                        <th scope="col">기준년월</th>
+                                                        <th scope="col">중첩수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>용도지역1</td>
+                                                        <td>2022-07</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>용도지역2</td>
+                                                        <td>2022-07</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>용도지역3</td>
+                                                        <td>2022-07</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- search_result [E] -->
+                                    <div class="search_result">
+                                        <div class="tocContSubTit">
+                                            <p>지역·지구 중첩 지정현황</p>
+                                            <button type="button" class="btnGray btnType01">상세조회</button>
+                                        </div>
+                                        <div class="result_table">
+                                            <table>
+                                                <caption>지역 지구 중첩 지정현황으로 지역지구명, 기준년월, 중첩수를 제공합니다</caption>
+                                                <colgroup>
+                                                    <col style="width: 240px;">
+                                                    <col style="width: 70px;">
+                                                    <col style="width: 70px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">지역지구명</th>
+                                                        <th scope="col">기준년월</th>
+                                                        <th scope="col">중첩수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>용도지역1</td>
+                                                        <td>2022-07</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>용도지역2</td>
+                                                        <td>2022-07</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>용도지역3</td>
+                                                        <td>2022-07</td>
+                                                        <td>9</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- search_result [E] -->
+                                </div>
+                                <div class="tocCont" id="tocContTab02_02">
+                                    <div class="listBox">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="chk01" id="chk01">
+                                                <label for="chk01"></label>
+                                                <label for="chk01">
+                                                    <div></div>
+                                                    6,666이상
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="chk02" id="chk02">
+                                                <label for="chk02"></label>
+                                                <label for="chk02">
+                                                    <div></div>
+                                                    5,555 이상 ~ 6,666 미만
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="chk03" id="chk03">
+                                                <label for="chk03"></label>
+                                                <label for="chk03">
+                                                    <div></div>
+                                                    4,444 이상 ~ 5,555 미만
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="chk04" id="chk04">
+                                                <label for="chk04"></label>
+                                                <label for="chk04">
+                                                    <div></div>
+                                                    3,333 이상 ~ 4,444 미만
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="chk05" id="chk05">
+                                                <label for="chk05"></label>
+                                                <label for="chk05">
+                                                    <div></div>
+                                                    2,222 이상 ~ 3,333 미만
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="chk06" id="chk06">
+                                                <label for="chk06"></label>
+                                                <label for="chk06">
+                                                    <div></div>
+                                                    1,111 이상 ~ 2,222 미만
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="chk07" id="chk07">
+                                                <label for="chk07"></label>
+                                                <label for="chk07">
+                                                    <div></div>
+                                                    1,111 미만
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //tocTab02 -->
+                        <div class="tab_cont" id="tocTab03">
+                            <div class="toc_tit">
+                                <p>유사그룹</p>
+                            </div>
+                        </div>
+                        <!-- //tocTab03 -->
+                    </div>
+                    <button type="button" class="toc_toggle_btn" title="toc 접기 버튼"></button>
+                    <!-- //tab_container -->
+                </div>
+            </div>
+            <div class="map_container">
+                <div class="map_area">
+                    <div id="map"><!-- 지도자리 --></div>
+                    <div class="top_menu">
+                        <div class="location">
+                            <ul>
+                                <li>
+                                    <span>경기도</span>
+                                    <div class="dep2">
+                                        <ul>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>광명시</span>
+                                    <div class="dep2">
+                                        <ul>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>철산12동</span>
+                                    <div class="dep2">
+                                        <ul>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                            <li><span>OO도</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 지도 위치 -->
+                        <div class="search_area">
+                            <select name="ex01" id="ex01">
+                                <option value="">통합</option>
+                            </select>
+                            <div class="search_box">
+                                <input type="text" placeholder="검색어를 입력하세요." title="검색 입력 창">
+                                <button type="button" class="search_btn" title="통합검색 버튼"></button>
+                                <div class="search_ex">
+                                    <p>ex) 서울 호텔, 제주 식물원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 검색 영역 -->
+                    </div>
+                    <!-- top_menu [E] -->
+                    <div class="tool_bar">
+                        <div class="map_more">
+                            <div class="deps01 deps02_in">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_01.png" alt="지도 아이콘">
+                                    </div>
+                                    <p>지도</p>
+                                </a>
+                                <div class="deps02">
+                                    <div class="deps02Flex">
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_01.png" alt="바로e맵 아이콘">
+                                            <p>바로e맵</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_02.png" alt="항공사진 아이콘">
+                                            <p>항공사진</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_03.png" alt="백지도 아이콘">
+                                            <p>백지도</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deps01 deps02_in">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_02.png" alt="지도분할 아이콘">
+                                    </div>
+                                    <p>지도분할</p>
+                                </a>
+                                <div class="deps02">
+                                    <div class="deps02Flex">
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_07.png" alt="전체지도 아이콘">
+                                            <p>전체지도</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_08.png" alt="2분할 아이콘">
+                                            <p>2분할</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_09.png" alt="3분할 아이콘">
+                                            <p>3분할</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_10.png" alt="4분할  아이콘">
+                                            <p>4분할 </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deps01">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_03.png" alt="레이어 아이콘">
+                                    </div>
+                                    <p>레이어</p>
+                                </a>
+                                <div class="deps02">
+                                    
+                                </div>
+                            </div>
+                            <div class="deps01">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_04.png" alt="분석도구 아이콘">
+                                    </div>
+                                    <p>분석도구</p>
+                                </a>
+                            </div>
+                            <div class="deps01 deps02_in">
+                                <a href="#none">
+                                    <div>
+                                        <img src="../images/toc/map_deps1_ico_05.png" alt="지정현황 아이콘">
+                                    </div>
+                                    <p>지정현황</p>
+                                </a>
+                                <div class="deps02">
+                                    <div class="deps02Flex">
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_04.png" alt="필지선택 아이콘">
+                                            <p>필지선택</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_05.png" alt="반경선택 아이콘">
+                                            <p>반경선택</p>
+                                        </a>
+                                        <a href="#none">
+                                            <img src="../images/toc/map_deps2_ico_06.png" alt="영역선택 아이콘">
+                                            <p>영역선택</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scale">
+                            <div class="deps01">
+                                <button type="button" class="scale_p" title="크게보기 버튼"></button>
+                            </div>
+                            <div class="deps01 scale_range">
+                                <input type="range" value="0" title="확대축소 범위">
+                            </div>
+                            <div class="deps01">
+                                <button type="button" class="scale_m" title="작게보기 버튼"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tool_bar [E] -->
+                </div>
+                <!-- map_area [E] -->
+                <article class="popup">
+                    <div class="popup_header">
+                        <div class="tit">
+                            <p>지역·지구 지정 현황 <em>14</em>건</p>
+                        </div>
+                        <button type="button" title="현황 보고서 출력 버튼" class="btnBlue"><img src="../images/toc/popup_print_ico.png" alt="현황 보고서 출력 버튼">보고서 출력</button>
+                    </div>
+                    <div class="popup_cont">
+                        <div class="scrollTable chkBox trhighlight" style="height: 230px;">
+                            <table>
+                                <caption>지역·지구 지정 현황으로 관리번호 지역지구명 법령명 소관부처 고시일자 이력을 나타냅니다</caption>
+                                <colgroup>
+                                    <col style="width: 56px;">
+                                    <col style="width: 300px;">
+                                    <col style="width: 294px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 99px;">
+                                    <col style="width: 99px;">
+                                    <col style="width: 85px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <input type="checkbox" name="popup_chk_01" id="popup_chk_01" class="chkAll">
+                                            <label for="popup_chk_01"></label>
+                                        </th>
+                                        <th scope="col">관리번호</th>
+                                        <th scope="col">지역지구명</th>
+                                        <th scope="col">법령명</th>
+                                        <th scope="col">소관부처</th>
+                                        <th scope="col">고시일자</th>
+                                        <th scope="col">이력</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="popup_chk_02" id="popup_chk_02" class="chkInd">
+                                            <label for="popup_chk_02"></label>
+                                        </td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>도시지역(포함)</td>
+                                        <td><a href="#none">국토의계획및이용에관한법률</a></td>
+                                        <td>국토교통부</td>
+                                        <td>2020-02-02</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="popup_chk_03" id="popup_chk_03" class="chkInd">
+                                            <label for="popup_chk_03"></label>
+                                        </td>
+                                        <td>00000000000000000000AAA0000000001</td>
+                                        <td>도시지역(포함)</td>
+                                        <td><a href="#none">국토의계획및이용에관한법률</a></td>
+                                        <td>국토교통부</td>
+                                        <td>2020-02-02</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="on">
+                                        <td>
+                                            <input type="checkbox" name="popup_chk_04" id="popup_chk_04" class="chkInd">
+                                            <label for="popup_chk_04"></label>
+                                        </td>
+                                        <td>00000000000000000000AAA0000000002</td>
+                                        <td>일반공업지역(포함)</td>
+                                        <td><a href="#none">국토의계획및이용에관한법률</a></td>
+                                        <td>국토교통부</td>
+                                        <td>2020-02-02</td>
+                                        <td><button type="button" class="btnGray">이력</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="popup_chk_05" id="popup_chk_05" class="chkInd">
+                                            <label for="popup_chk_05"></label>
+                                        </td>
+                                        <td>00000000000000000000AAA0000000003</td>
+                                        <td>지구단위계획구역(포함)</td>
+                                        <td><a href="#none">국토의계획및이용에관한법률</a></td>
+                                        <td>국토교통부</td>
+                                        <td>2020-02-02</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="popup_chk_06" id="popup_chk_06" class="chkInd">
+                                            <label for="popup_chk_06"></label>
+                                        </td>
+                                        <td>00000000000000000000AAA0000000004</td>
+                                        <td>광로3류(폭40m~50m)(접함)</td>
+                                        <td><a href="#none">국토의계획및이용에관한법률</a></td>
+                                        <td>국토교통부</td>
+                                        <td>2020-02-02</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" class="popup_toggle_btn" title="popup 접기 버튼"></button>
+                </article>
+                <!-- 이력조회 -->
+                <article class="popupSliding active" style="top: 60px; left: 24px; width: 590px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">이력조회</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupCont">
+                            <div class="scrollTable tableBox chkBox" style="height: auto; max-height: 500px;">
+                                <table>
+                                    <caption>이력조회로 지역지구명 작업일시 변경고지일 비고를 제공합니다</caption>
+                                    <colgroup>
+                                        <col style="width: 46px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 140px;">
+                                        <col style="width: 140px;">
+                                        <col style="width: auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <input type="checkbox" name="popup_chk_07" id="popup_chk_07" class="chkAll">
+                                                <label for="popup_chk_07"></label>
+                                            </th>
+                                            <th scope="col">지역지구명</th>
+                                            <th scope="col">작업일시</th>
+                                            <th scope="col">변경고지일</th>
+                                            <th scope="col">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_08" id="popup_chk_08" class="chkInd">
+                                                <label for="popup_chk_08"></label>
+                                            </td>
+                                            <td>일반공업지역</td>
+                                            <td>2022-01-01 12:12:12</td>
+                                            <td>2022-01-01 12:12:12</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="popup_chk_09" id="popup_chk_09" class="chkInd">
+                                                <label for="popup_chk_09"></label>
+                                            </td>
+                                            <td>일반공업지역</td>
+                                            <td>2022-01-01 12:12:12</td>
+                                            <td>2022-01-01 12:12:12</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //이력조회 -->
+                <!-- 일필지 조회 -->
+                <article class="popupSliding active" style="top: 60px; left: 660px; width: 590px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">일필지 조회</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="popupCont">
+                            <div class="popupTabWrap tab_wrap tabDynamic">
+                                <ul class="tab_btn tabBtn05">
+                                    <li class="on">
+                                        <a href="#" title="일필지정보">
+                                            <p>일필지정보</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="건축물정보">
+                                            <p>건축물정보</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="가격정보">
+                                            <p>가격정보</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="토지이용계획">
+                                            <p>토지이용계획</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="대지권등록부">
+                                            <p>대지권등록부</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab_container scrollTable tabDynamic_cont " style="max-height: 650px;">
+                                    <div class="tab_cont on">
+                                        <!-- <div class="popupContTit">
+                                            <p>일필지정보</p>
+                                        </div> -->
+                                        <div class="popupCont">
+                                            <div class="addressBox">
+                                                <div>
+                                                    <span class="blue">도로명</span>
+                                                    <p>경기도 안양시 동안구 별말로 123(관양동)</p>
+                                                </div>
+                                                <div>
+                                                    <span class="gray">지번</span>
+                                                    <p>경기도 안양시 동안구 관양동 792-2번지 [PNU : 12345678912345679]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //일필지정보 -->
+                                        <div class="popupContTit">
+                                            <p>토지정보</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="height: 200px;">
+                                                <table>
+                                                    <caption>일필지 조회의 토지정보로 지목, 면적, 축적을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 183px;">
+                                                        <col style="width: auto;">
+                                                        <col style="width: 183px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">지목</th>
+                                                            <th colspan="col">면적(㎡)</th>
+                                                            <th colspan="col">축적</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1200</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>57.0</td>
+                                                            <td>1:1100</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //토지정보 -->
+                                        <div class="popupContTit">
+                                            <p>소유자정보</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 소유자 정보로 소유구분, 소유자명, 변동일자, 변동사유를 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 137px;">
+                                                        <col style="width: auto;">
+                                                        <col style="width: 137px;">
+                                                        <col style="width: 137px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">소유구분</th>
+                                                            <th colspan="col">소유자명</th>
+                                                            <th colspan="col">변동일자</th>
+                                                            <th colspan="col">변동사유</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>개인</td>
+                                                            <td>김**</td>
+                                                            <td>1975-05-20</td>
+                                                            <td>소유권이전</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //소유자정보 -->
+                                        <div class="popupContTit">
+                                            <p>소유권변동연혁</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 소유권변동연혁으로 소유구분, 소유자명, 변동일자, 변동사유를 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 137px;">
+                                                        <col style="width: auto;">
+                                                        <col style="width: 137px;">
+                                                        <col style="width: 137px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">소유구분</th>
+                                                            <th colspan="col">소유자명</th>
+                                                            <th colspan="col">변동일자</th>
+                                                            <th colspan="col">변동사유</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>개인</td>
+                                                            <td>김**</td>
+                                                            <td>1975-05-20</td>
+                                                            <td>일부대지권설정</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //소유권변동연혁 -->
+                                        <div class="popupContTit">
+                                            <p>토지이동연혁</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 토지이동연혁으로 지목 면적 이동일자 이동사유를 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 137px;">
+                                                        <col style="width: auto;">
+                                                        <col style="width: 137px;">
+                                                        <col style="width: 137px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">지목</th>
+                                                            <th colspan="col">면적(㎡)</th>
+                                                            <th colspan="col">이동일자</th>
+                                                            <th colspan="col">이동사유</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>대</td>
+                                                            <td>38,737.2</td>
+                                                            <td>1975-05-20</td>
+                                                            <td>구획정리완료</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //토지이동연혁 -->
+                                    </div>
+                                    <!-- //tocTab01 -->
+                                    <div class="tab_cont">
+                                        <div class="popupContTit mt_20">
+                                            <p>건축물목록</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="max-height: 200px;">
+                                                <table>
+                                                    <caption>일필지 조회의 건축물정보 건축물목록으로 대장종류, 건축물 명칭, 동명칭/번호, 상세보기를 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: auto;">
+                                                        <col style="width: 137px;">
+                                                        <col style="width: 120px;">
+                                                        <col style="width: 137px;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">대장종류</th>
+                                                            <th colspan="col">건축물 명칭</th>
+                                                            <th colspan="col">동명칭/번호</th>
+                                                            <th colspan="col">상세보기</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>총괄표제부</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>-</td>
+                                                            <td>
+                                                                <button type="button" class="btnBlue type02">상세보기</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>표제부(주건축물)</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4001동</td>
+                                                            <td>
+                                                                <button type="button" class="btnBlue type02">상세보기</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>표제부(주건축물)</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4002동</td>
+                                                            <td>
+                                                                <button type="button" class="btnBlue type02">상세보기</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>표제부(주건축물)</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4003동</td>
+                                                            <td>
+                                                                <button type="button" class="btnBlue type02">상세보기</button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- // 건축물목록 -->
+                                        <div class="popupContTit top">
+                                            <div class="flex sb ac">
+                                                <p>건축물정보</p>
+                                                <div class="choiceArea">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="radio">
+                                                                <input type="radio" name="rd01" id="rd1" checked="">
+                                                                <label for="rd1">
+                                                                    <span class="labelName">기본정보</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="radio">
+                                                                <input type="radio" name="rd01" id="rd2">
+                                                                <label for="rd2">
+                                                                    <span class="labelName">층별현황</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="radio">
+                                                                <input type="radio" name="rd01" id="rd3">
+                                                                <label for="rd3">
+                                                                    <span class="labelName">호별현황</span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popupCont bottom">
+                                            <div class="bottomCont active">
+                                                <div class="tableBox">
+                                                    <table>
+                                                        <caption>일필지 조회의 건축물정보 기본정보 테이블로 대지면적, 건축면적, 연면적, 용적율산정면적, 건폐율, 용적율, 총호수, 주차수, 주용도, 기타용도, 건물구조, 기타구조, 건물지붕, 기타지붕, 높이, 층수, 부속건물수, 부속건물면적, 허가일자, 작공일자, 사용승인일자, 특이사항, 관련(대표)지번을 제공합니다</caption>
+                                                        <colgroup>
+                                                            <col style="width: 115px;">
+                                                            <col style="width: 170px;">
+                                                            <col style="width: 115px;">
+                                                            <col style="width: auto;">
+                                                        </colgroup>
+                                                        <thead></thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th colspan="row">대지면적</th>
+                                                                <td>-</td>
+                                                                <th colspan="row">건축면적</th>
+                                                                <td>629.28㎡</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">연면적</th>
+                                                                <td>12,724.89㎡</td>
+                                                                <th colspan="row">용적율산정면적</th>
+                                                                <td>12,501.33㎡</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">건폐율</th>
+                                                                <td>-</td>
+                                                                <th colspan="row">용적율</th>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">총호수</th>
+                                                                <td>114세대 / null호 / null가구</td>
+                                                                <th colspan="row">주차수</th>
+                                                                <td>0 대</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">주용도</th>
+                                                                <td>공동주택</td>
+                                                                <th colspan="row">기타용도</th>
+                                                                <td>공동주택(아파트)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">건물구조</th>
+                                                                <td>철근콘크리트구조</td>
+                                                                <th colspan="row">기타구조</th>
+                                                                <td>철근콘크리트구조</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">건물지붕</th>
+                                                                <td>기타지붕</td>
+                                                                <th colspan="row">기타지붕</th>
+                                                                <td>철골조경사지붕</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">높이</th>
+                                                                <td>84.5m</td>
+                                                                <th colspan="row">층수</th>
+                                                                <td>지상:29층, 지하:2층</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">부속건물수</th>
+                                                                <td>0동</td>
+                                                                <th colspan="row">부속건물면적</th>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">허가일자</th>
+                                                                <td>2007-12-27</td>
+                                                                <th colspan="row">작공일자</th>
+                                                                <td>2011-01-14</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">사용승인일자</th>
+                                                                <td>2013-12-12</td>
+                                                                <th colspan="row">특이사항</th>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="row">관련(대표)지번</th>
+                                                                <td colspan="3">1001(대표)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="bottomCont">
+                                                <div class="scrollTable tableBox" style="max-height: 240px;">
+                                                    <table>
+                                                        <caption>일필지 조회의 건축물정보 층별현황테이블로 구분, 층명, 구조, 용도, 면적을 제공합니다</caption>
+                                                        <colgroup>
+                                                            <col style="width: 60px;">
+                                                            <col style="width: 60px;">
+                                                            <col style="width: 200px;">
+                                                            <col style="width: 120px;">
+                                                            <col style="width: auto;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="col">구분</th>
+                                                                <th colspan="col">층명</th>
+                                                                <th colspan="col">구조</th>
+                                                                <th colspan="col">용도</th>
+                                                                <th colspan="col">면적(㎡)</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>20층</td>
+                                                                <td>철근콘크리트구조</td>
+                                                                <td>아파트</td>
+                                                                <td>436.36</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="bottomCont">
+                                                <div class="tableBox">
+                                                    <table>
+                                                        <caption>일필지 조회의 건축물정보 호별현황으로 구분, 동명, 층명, 호명, 전유/공유 조회를 제공합니다</caption>
+                                                        <colgroup>
+                                                            <col style="width: 60px;">
+                                                            <col style="width: 100px;">
+                                                            <col style="width: 60px;">
+                                                            <col style="width: 120px;">
+                                                            <col style="width: auto;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th colspan="col">구분</th>
+                                                                <th colspan="col">동명</th>
+                                                                <th colspan="col">층명</th>
+                                                                <th colspan="col">호명</th>
+                                                                <th colspan="col">전유/공유 조회</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>4001동</td>
+                                                                <td>1</td>
+                                                                <td>102</td>
+                                                                <td>
+                                                                    <button type="button" class="btnBlue type02">전유/공유 조회</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="5">
+                                                                    <div class="scrollTable tableBox" style="max-height: 240px; margin-top: 0;">
+                                                                        <table>
+                                                                            <caption>일필지 조회의 건축물정보 호별현황으로 전유공유, 주부속구분, 층명, 건물구조, 기타구조, 기타용도, 바닥면적을 제공합니다</caption>
+                                                                            <colgroup>
+                                                                                <col style="width: 55px;">
+                                                                                <col style="width: 75px;">
+                                                                                <col style="width: 60px;">
+                                                                                <col style="width: 100px;">
+                                                                                <col style="width: 100px;">
+                                                                                <col style="width: 90px;">
+                                                                                <col style="width: auto;">
+                                                                            </colgroup>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th colspan="col">전유<br>공유</th>
+                                                                                    <th colspan="col">주부속구분</th>
+                                                                                    <th colspan="col">층명</th>
+                                                                                    <th colspan="col">건물구조</th>
+                                                                                    <th colspan="col">기타구조</th>
+                                                                                    <th colspan="col">기타용도</th>
+                                                                                    <th colspan="col">바닥면적(㎡)</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>전유</td>
+                                                                                    <td>주건축물</td>
+                                                                                    <td>1층</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>아파트</td>
+                                                                                    <td>84.81</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>공용</td>
+                                                                                    <td>주건축물</td>
+                                                                                    <td>각층</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>계단실, 승강기, 홀 등</td>
+                                                                                    <td>28.2032</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>공용</td>
+                                                                                    <td>주건축물</td>
+                                                                                    <td>지2-지1</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>지하주차장 연결통로</td>
+                                                                                    <td>1.6597</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>공용</td>
+                                                                                    <td>부속건축물</td>
+                                                                                    <td>지1</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>지하주차장</td>
+                                                                                    <td>44.6622</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>공용</td>
+                                                                                    <td>부속건축물</td>
+                                                                                    <td>1층</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>보육시설</td>
+                                                                                    <td>0.1633</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>공용</td>
+                                                                                    <td>부속건축물</td>
+                                                                                    <td>지1-1층</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>철근콘크리트구조</td>
+                                                                                    <td>휘트니스센터, 골프연습장, 샤워, 탈의실, 관리사무소, 작은도서관</td>
+                                                                                    <td>0.8359</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>지상</td>
+                                                                <td>4001동</td>
+                                                                <td>1</td>
+                                                                <td>102</td>
+                                                                <td>
+                                                                    <button type="button" class="btnBlue type02">전유/공유 조회</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //tocTab02 -->
+                                    <div class="tab_cont">
+                                        <div class="popupContTit mt_20">
+                                            <p>개별공시지가</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="max-height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 가격정보 개별공시지가로 기준일자, 공시일자, 공시지가(원)을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 170px;">
+                                                        <col style="width: 170px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">기준일자</th>
+                                                            <th colspan="col">공시일자</th>
+                                                            <th colspan="col">공시지가(원/㎡)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2021년01월</td>
+                                                            <td>2021-07-31</td>
+                                                            <td>2,760,000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //개별공시지가 -->
+                                        <div class="popupContTit">
+                                            <p>개별주택가격</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="max-height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 가격정보 개별주택가격으로 기준일자, 건물번호, 대지면적/산정면적(㎡), 건물 연면적/산정면적(㎡), 주택가격(원)을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 100px;">
+                                                        <col style="width: 50px;">
+                                                        <col style="width: 150px;">
+                                                        <col style="width: 150px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">기준일자</th>
+                                                            <th colspan="col">건물번호</th>
+                                                            <th colspan="col">대지면적/산정면적(㎡)</th>
+                                                            <th colspan="col">건물연면적/산정면적(원/㎡)</th>
+                                                            <th colspan="col">주택가격(원)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="5">검색결과가 없습니다</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //개별주택가격 -->
+                                        <div class="popupContTit">
+                                            <p>공동주택가격</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="max-height: 200px;">
+                                                <table>
+                                                    <caption>일필지 조회의 가격정보 공동주택가격으로 기준일자, 단지명, 동, 층, 호 전유면적, 공시가격을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 100px;">
+                                                        <col style="width: 100px;">
+                                                        <col style="width: 50px;">
+                                                        <col style="width: 50px;">
+                                                        <col style="width: 50px;">
+                                                        <col style="width: 100px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">기준일자</th>
+                                                            <th colspan="col">단지명</th>
+                                                            <th colspan="col">동</th>
+                                                            <th colspan="col">층</th>
+                                                            <th colspan="col">호</th>
+                                                            <th colspan="col">전유면적(㎡)</th>
+                                                            <th colspan="col">공시가격(원)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2020년01월</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4001</td>
+                                                            <td>2</td>
+                                                            <td>204</td>
+                                                            <td>74.97</td>
+                                                            <td>334,000,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2020년01월</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4001</td>
+                                                            <td>3</td>
+                                                            <td>301</td>
+                                                            <td>74.97</td>
+                                                            <td>334,000,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2020년01월</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4001</td>
+                                                            <td>3</td>
+                                                            <td>302</td>
+                                                            <td>84.81</td>
+                                                            <td>334,000,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2020년01월</td>
+                                                            <td>광교마을40단지</td>
+                                                            <td>4001</td>
+                                                            <td>3</td>
+                                                            <td>303</td>
+                                                            <td>74.97</td>
+                                                            <td>334,000,000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //공동주택가격 -->
+                                    </div>
+                                    <!-- //tocTab03 -->
+                                    <div class="tab_cont">
+                                        <div class="popupContTit mt_20">
+                                            <p>토지이용계획</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="tableBox">
+                                                <table>
+                                                    <caption>일필지 조회의 토지이용계획으로 지역 지구 등 지정여부의 국토의 계획 및 이용에 관한 법률에 따른 지역 지구등, 다른 법령 등에 따른 지역 지구 등과 추가기재사항, 토지이용규제 기본법 시행령 제9조 제4항 각 호에 해당되는 사항을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 100px;">
+                                                        <col style="width: 160px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th rowspan="2">지역지구 등<br>지정여부</th>
+                                                            <th colspan="row">「국토의 계획 및 이용에 관한 법률」<br>에 따른 지역·지구 등</th>
+                                                            <td>준공업지역,중요시설물보호지구(항만)(2015-04-04)(항만시설보호지구), 개발행위허가제한지역(2020-02-05)(부산항 북항2단계 재개발수립지역 일원에 대하여 「국계법」 제63조에 따라 개발행위허가 제한), 대로2류(폭 30m~35m)(대로 2-1호선(구간내 편입된 사유지 제척하여 기개설된 현황대로 가각조정)) (접합),소로2류(폭 8m 미만)(저촉),중로3류(폭 12m~15m)(접합)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="row">다른 법령 등에 따른<br>지역·지구 등</th>
+                                                            <td>가축사육제한구역&lt;가축분뇨의 관리 및 이용에 관한 법률&gt;, 상대보호구역(2016-09-013)(상대정화구역(성남2초등학교))&lt; 교육환경보호에 관한 법률&gt;, 철도보호지구(철도보호지구)&lt;철도안전법&gt;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">추가 기재사항</th>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="2">「토지이용규제 기본법 시행령<br>제9조 제4항<br>각 호에 해당하는 사항</th>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tableBox">
+                                                <table>
+                                                    <caption>일필지 조회의 토지이용계획의 철도보호지구, 준공업지역, 개발행위허가제한지역, 중로3류, 법정동을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 250px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="../images/common/bg-sample-map.png" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <div class="legendArea">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="colorBox" style="border: 1px solid #A05AC8;"></div>
+                                                                            <span class="legendName">철도보호지구</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="colorBox" style="background-color: #D29BFA;"></div>
+                                                                            <span class="legendName">준공업지역</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="colorBox" style="border: 1px solid #FF3264;"></div>
+                                                                            <span class="legendName">개발행위허가제한지역</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="colorBox" style="border: 1px solid #FF3264;"></div>
+                                                                            <span class="legendName">중로3류(폭 12m~15m)</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="colorBox" style="border: 1px solid #AA9875;"></div>
+                                                                            <span class="legendName">법정동</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="ratio">
+                                                                        <span>축척 : 1/0600</span>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //토지이용계획 -->
+                                    </div>
+                                    <!-- //tocTab04 -->
+                                    <div class="tab_cont">
+                                        <div class="popupCont mt_20">
+                                            <div class="popupSearchBox type03 flex jc">
+                                                <div>
+                                                    <select name="s01" id="s01">
+                                                        <option value="">4001</option>
+                                                    </select>
+                                                    <select name="s02" id="s02">
+                                                        <option value="">1</option>
+                                                    </select>
+                                                    <select name="s03" id="s03">
+                                                        <option value="">103</option>
+                                                    </select>
+                                                </div>
+                                                <button type="button" class="btnGray02 type02" title="조회">조회</button>
+                                            </div>
+                                        </div>
+                                        <div class="popupContTit">
+                                            <p>대지권등록부</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="max-height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 대지권등록부로 집합건물명, 집합건물일련번호, 대지권지분내용, 관련지번을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 140px;">
+                                                        <col style="width: 140px;">
+                                                        <col style="width: 140px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">집합건물명</th>
+                                                            <th colspan="col">집합건물일련번호</th>
+                                                            <th colspan="col">대지권지분내용</th>
+                                                            <th colspan="col">관련지번</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>광교마을40단지</td>
+                                                            <td>0014</td>
+                                                            <td>59.38/109977.3</td>
+                                                            <td>1001-0000</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //대지권등록부 -->
+                                        <div class="popupContTit">
+                                            <p>소유권연혁</p>
+                                        </div>
+                                        <div class="popupCont">
+                                            <div class="scrollTable tableBox" style="max-height: 93px;">
+                                                <table>
+                                                    <caption>일필지 조회의 대지권등록부의 소유권연혁으로 소유구분, 등록번호, 소유자명, 변동일자, 관련지번을 제공합니다</caption>
+                                                    <colgroup>
+                                                        <col style="width: 100px;">
+                                                        <col style="width: 120px;">
+                                                        <col style="width: 100px;">
+                                                        <col style="width: 100px;">
+                                                        <col style="width: auto;">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="col">소유구분</th>
+                                                            <th colspan="col">등록번호</th>
+                                                            <th colspan="col">소유자명</th>
+                                                            <th colspan="col">변동일자</th>
+                                                            <th colspan="col">관련지번</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>개인</td>
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                            <td>2021-04-08</td>
+                                                            <td>소유권이전</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- //소유권연혁 -->
+                                    </div>
+                                    <!-- //tocTab05 -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //일필지 조회 -->
+                <article class="popupSliding active" style="top: 60px; left: 1300px; width: 590px;">
+                    <div class="popupHeader">
+                        <span class="popupTit">법률정보조회</span>
+                        <div class="titBtn">
+                            <button class="miniBtn" type="button">
+                                <span class="hidden">팝업 최소화 버튼</span>
+                            </button>
+                            <button class="cloBtn" type="button">
+                                <img src="../images/popup/ico_clo_btn.png" alt="닫기버튼">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- //popupTit -->
+                    <div class="slidingBox">
+                        <div class="StatuteBox">
+                            <h3>국토의 계획 및 이용에 관한 법률</h3>
+                            <div class="law">
+                                <p><span>[시행 2022.07.21] [법률 제 18310호, 2021.07.20, 타법개정]</span></p>
+                                <p>국토교통부 044-201-4724, 3717, 3707</p>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <h4>제1장 총칙 <span>&lt;개정 2011.4.14&gt;</span></h4>
+                        </div>
+                        <div class="popupContTit">
+                            <p>제5조(도시·군계획 등의 명칭)</p>
+                        </div>
+                        <div class="popupCont">
+                            <div class="txtBox">
+                                <p>① 행정구역의 명칭이 특별시·광역시·특별자치시·특별자치도·시인 경우 도시·군계획, 도시·군기본계획, 도시·군관리계획, 도시·군계획시설, 도시·군계획시설사업, 도시·군계획사업 및 도시·군계획상임기획단의 명칭은 각각 "도시계획", "도시기본계획", "도시관리계획", "도시계획시설", "도시계획시설사업", "도시계획사업" 및 "도시계획상임기획단"으로 한다. <span>&lt;개정 2011.4.14&gt;</span></p>
+                                <p>② 행정구역의 명칭이 특별시·광역시·특별자치시·특별자치도·시인 경우 도시·군계획, 도시·군기본계획, 도시·군관리계획, 도시·군계획시설, 도시·군계획시설사업, 도시·군계획사업 및 도시·군계획상임기획단의 명칭은 각각 "도시계획", "도시기본계획", "도시관리계획", "도시계획시설", "도시계획시설사업", "도시계획사업" 및 "도시계획상임기획단"으로 한다. <span>&lt;개정 2011.4.14&gt;</span></p>
+                            </div>
+                        </div>
+                        <div class="popupContTit">
+                            <p>제6조(국토의 용도 구분)</p>
+                        </div>
+                        <div class="popupCont">
+                            <div class="txtBox">
+                                <p>국토는 토지의 이용실태 및 특성, 장래의 토지 이용 방향, 지역 간 균형발전 등을 고려하고 다음과 같은 용도지역으로 구분한다. <span>&lt;개정 2013.5.22&gt;</span></p>
+                                <ul>
+                                    <li><p>가. 도시지역의 인구와 산업을 수용하기 위하여 도시지역에 준하여 체계적으로 관리</p></li>
+                                    <li><p>나. 도시지역의 인구와 산업을 수용하기 위하여 도시지역에 준하여 체계적으로 관리</p></li>
+                                    <li><p>다. 도시지역의 인구와 산업을 수용하기 위하여 도시지역에 준하여 체계적으로 관리</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="popupContTit">
+                            <p>제6조(국토의 용도 구분)</p>
+                        </div>
+                        <div class="popupCont">
+                            <div class="txtBox">
+                                <p>국토는 토지의 이용실태 및 특성, 장래의 토지 이용 방향, 지역 간 균형발전 등을 고려하고 다음과 같은 용도지역으로 구분한다. <span>lt;개정 2013.5.22&gt;</span></p>
+                                <p>1. 도시지역 : 인구와 산업이 밀집되어 있거나 밀집이 예상되어 그 지역에 대하여 체계적인 개발·정비·관리·보전 등이 필요한 지역</p>
+                                <p>2. 관리지역 : 도시지역의 인구와 산업을 수용하기 위하여 도시지역에 준하여 체계적으로 관리하거나 농림업의 진흥, 자연환경 또는 산림의 보전을 위하여 농림지역 또는 자연환경보전지역에 준하여 관리할 필요가 있는 지역</p>
+                            </div>
+                        </div>
+                        <!-- //토지정보 -->
+                    </div>
+                    <!-- //popupCont -->
+                </article>
+                <!-- //법률정보조회 -->
+            </div>
+        </main>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer id="footer">
+            
+        </footer>
+        <!-- //footer -->
+    </div>
+    
+</body>
+</html>
